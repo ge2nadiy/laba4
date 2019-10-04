@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Опрос</title>
+		<link href="../Content/style.css" rel="stylesheet" type="text/css">
+		<meta http-equiv = "Content-type" content = "text/html; charset = utf-8">
+		<meta http-equiv="X-UA-Compatible" content ="IE=Edge">
+		<link rel = "stylesheet" href="http://fonts.googleapis.com/css? family=Oswald:400,300" type="text/css"> 
+        <script src="../Scripts/script.js"></script> 
+    </head>
+    <body>
+        <header>
+		    <h2 style="color:rgb(248, 255, 253); text-shadow: 5px 14px 15px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.25);">Опрос о предпочтениях телепередач</h2>
+		</header>
+        <div class = "my-flex-container">
+            <nav>
+            </nav>
+            
+            <article>
+			    <form name = "opros" id='testForm' action='javascript: show();' onsubmit='return validate_form();' method="post">
+				    <div class = "main">
+				    <div class = "field">
+				    <label>Имя:</label>
+				     	<input class = "input-style" type = "text" name = "name" id = "name_" placeholder="Введите имя"/>
+						<br>					
+		
+					<label class="col-2 col-form-label">E-mail:</label>
+				        <input class = "input-style" type = "email"  name = "email" id = "e-mail" placeholder="Введите e-mail"/>
+				    <br>					
+					<label>Ваш пол?</label>
+					    <input class = "radio-style" type="radio" name = "rad" value = "male" checked="true"> мужской
+						<input class = "radio-style" type="radio" name = "rad" value = "female"> женский
+						<br>
+                    </div>              
+                        <br> 
+					<label>Ваш возраст?</label><br><br>	 
+					    <select name = "age" class = "input-style" id="prior">
+						    <option></option>
+  							<option value="do 18">До 18</option>
+  							<option value="18-25">18-25</option>
+  							<option value="26-35">26-35</option>
+  							<option value="36-45">36-45</option>
+  							<option value="46-55">46-55</option>
+  							<option value="56+">56+</option>
+						</select>	
+						<br>
+					<label>Какой жанр телепередач Вы предпочитаете:</label> 
+					<br><br>
+                        <input type="checkbox" name="choise" id="inter" value="interview" checked="true">Интервью<br>
+					    <input type="checkbox" name="choise" id="nw" value="news">Новости<br>
+						<input type="checkbox" name="choise" id="bs" value="brainstorm">Телевикторины<br>
+						<input type="checkbox" name="choise" id="fm" value="films">Фильмы и сериалы<br>
+						<input type="checkbox" name="choise" id="fn" value="fun">Развлекательные передачи<br>
+						<input type="checkbox" name="choise" id="ts" value="talkshow">Ток-шоу<br>
+						<input type="checkbox" name="choise" id="other_" value="Other">Не смотрю телепередачи<br>
+					<input id="datetime" type="date"> Время
+					<br><br>
+					<label>Оставьте комментарий:</label><br>
+					    <textarea name="comment" class = "textarea-style" placeholder="Комментарии..."></textarea><br>
+						<input type="submit" class = "button-style" onclick="return validate(this.form)" value="Отправить">
+                         <button class="color-button2" onclick="onclearbutton()" type="reset">Очистить форму</button>
+						
+                         
+					</div>					
+				</form>
+		    </article>
+<aside>
+</aside>
+
+</div>
+<footer>
+        <br>Gena Kotkovets, 2018 &copy;
+    </footer>
+    </body>

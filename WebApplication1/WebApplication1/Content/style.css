@@ -1,0 +1,178 @@
+﻿body{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    background-color: #ffd1d7;
+}
+
+header {
+    background-color: pink;
+    background-size: 35%;
+    height: 125px;
+    border: 1.5px solid #34011e;
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    background-color: green;
+    border: 1.5px solid #34011e;
+    height: 160px;
+    position:relative;
+    text-align: center;
+    font-family: abeezee;
+    margin: auto;
+}
+
+
+
+@-moz-keyframes Text {
+    0% { transform: rotate(0deg) scale(0.3,0.3) ;
+        opacity: 0;  }
+    50% {
+        transform: rotate(0deg) scale(1.05,1.05) ;
+        opacity: 1;  }
+    100% { transform:
+            rotate(0deg) scale(1) ;  }
+
+}
+
+.my-flex-container{
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap; /*Свойство управляет тем, как flex-контейнер будет выкладывать flex-элементы — в одну строку или в несколько,*/
+    flex-direction: row;/*Свойство определяет, каким образом flex-элементы укладываются во flex-контейнере, задавая направление главной оси flex-контейнера. */
+    flex-grow: 0; /*Свойство определяет коэффициент увеличения ширины flex-элемента относительно других flex-элементов. */
+    flex-shrink: 1;	/*Свойство указывает коэффициент уменьшения ширины flex-элемента относительно других flex-элементов.*/
+}
+
+article {
+    padding: 10px;
+    border-left: 5px solid #34011e;
+    border-right: 5px solid #34011e;
+    background: #a52637;
+    border-bottom:  5px solid #34011e;
+    border-top:  5px solid #34011e;
+    flex-basis: 70%;
+
+}
+
+aside {
+    padding: 10px;
+    border-right: 5px solid #34011e;
+    background: #5592ad;
+    flex-basis: 10%;
+    border-bottom:  5px solid #34011e;
+    border-top:  5px solid #34011e;
+
+}
+
+nav {
+    padding: 10px;
+    background: #b182b9;
+    flex-basis: 20%;
+    border-left: 5px solid #34011e;
+    border-bottom:  5px solid #34011e;
+    border-top:  5px solid #34011e;
+}
+
+form {
+    margin: 30px;
+
+}
+
+.input-style{
+    border: 2px solid #571536;
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom:20px;
+    width:280px;
+    margin-left: 50px;
+
+}
+.main { /* для выравнивания полей формы */
+    float:left;
+}
+
+label{
+    font-family: 'Lobster',cursive;
+    font-size: 15px;
+    float:left;
+    color: #0e2b2e;
+}
+
+.field {    /* для выравнивания полей формы */
+    clear:both; /*Отменяет обтекание элемента одновременно с правого и левого края. */
+    text-align:right;
+    line-height:25px;
+}
+
+.radio-style{
+    opacity: 0.7;
+    padding: 8px;
+    margin-bottom:10px;
+    margin-left: 20px;
+}
+
+.radio-style1{
+    opacity: 0.7;
+    padding: 8px;
+    margin-bottom:10px;
+   /* float: center; ---------------------------------------------------------*/
+}
+.textarea-style{
+    border: 2px solid #34011e;
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom:20px;
+    width: 450px;
+    height: 60px;
+}
+
+.button-style{
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background: #ffd1d7;
+    border: 2px solid #34011e;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.color-button2{
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background: #ffd1d7;
+    border: 2px solid #34011e;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+table {
+    background: none; /* Цвет фона таблицы */
+    border-spacing: 0px; /* Расстояние между ячейками */
+    border-collapse: collapse;
+    margin: auto;
+    border: 2px solid #34011e;
+    text-align: center;
+    vertical-align: middle;
+}
+td, tr{
+    border: 2px solid #34011e;
+    padding: 0;
+}
+
+h2{
+    font-family: 'Lobster',cursive;
+    color: #34011e;
+}
+
+h3, a{
+    color: #34011e;
+}
