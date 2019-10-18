@@ -1,6 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\Lenovo\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\Lenovo\.Rider2019.2\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\Lenovo\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Lenovo\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_WebApplication1.1773177785.00" t="ExcludeRecursive" />
@@ -39,7 +40,9 @@
         </e>
         <e p="Global.asax" t="Include" />
         <e p="Global.asax.cs" t="Include" />
-        <e p="Models" t="Include" />
+        <e p="Models" t="Include">
+          <e p="Questionnaire.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
         <e p="Properties" t="Include">
